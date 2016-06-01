@@ -1,0 +1,12 @@
+---
+pipeline: "workflows/maven/CanaryReleaseAndStage/Jenkinsfile"
+buildName: "fabric8-camel-jetty"
+codeReview: false
+links:
+  Git: "https://github.com/monodot/fabric8-camel-jetty"
+  Job: "http://jenkins.vagrant.f8/job/fabric8-camel-jetty"
+  Staging: "http://172.30.177.106:80/kubernetes/pods?namespace=default-staging"
+  Testing: "http://172.30.177.106:80/kubernetes/pods?namespace=default-testing"
+environments:
+  Testing: "default-testing"
+  Staging: "default-staging"
